@@ -30,7 +30,8 @@
     "font-awesome": "~4.2.0",
     "jquery-ui": "~1.11.2",
     "bootstrap-switch":"~3.2.2",
-    "react": "~0.12.1"
+    "react": "~0.12.1",
+    "leaflet-sidebar-v2":"https://github.com/Turbo87/sidebar-v2.git"
   },
   "resolutions": {
     "jquery": "~2.1.1",

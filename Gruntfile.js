@@ -60,6 +60,10 @@ module.exports = function(grunt) {
             "ooiui/static/js/partials/Alert.html",
             "ooiui/static/js/partials/Chart.html",
             "ooiui/static/js/partials/FakeTable.html"
+          ],
+          "ooiui/static/js/partials/compiled/timelineDemo.js": [
+            "ooiui/static/js/partials/Timeline.html",
+            "ooiui/static/js/partials/TimelineEntry.html"
           ]
         }
       }
@@ -182,6 +186,27 @@ module.exports = function(grunt) {
             'ooiui/static/js/views/common/PanelView.js',
             'ooiui/static/js/views/common/FakeTableView.js',
             'ooiui/static/js/views/common/ChartView.js'
+          ],
+          'ooiui/static/js/compiled/timelineDemo.js' : [
+            // Libs
+            'ooiui/static/lib/jquery-cookie/jquery.cookie.js',
+            'ooiui/static/lib/underscore/underscore.js',
+            'ooiui/static/lib/backbone/backbone.js',
+            "ooiui/static/lib/loremjs/lorem.js",
+            // App
+            'ooiui/static/js/ooi.js',
+            // Models
+            'ooiui/static/js/models/common/MessageModel.js',
+            'ooiui/static/js/models/common/LoginModel.js',
+            'ooiui/static/js/models/common/FakeTableModel.js',
+            'ooiui/static/js/models/common/TimelineModel.js',
+            // Views
+            'ooiui/static/js/views/common/DropdownMessagesView.js',
+            'ooiui/static/js/views/common/DropdownUserView.js',
+            "ooiui/static/js/views/common/NavbarView.js",
+            'ooiui/static/js/views/common/LoginView.js',
+            'ooiui/static/js/views/common/ModalDialogView.js',                      
+            'ooiui/static/js/views/common/TimelineView.js'
           ]
         }
       },
@@ -226,6 +251,10 @@ module.exports = function(grunt) {
             "ooiui/static/css/common/scienceLayout.css",
             "ooiui/static/lib/metis-menu/dist/metisMenu.css",
             "ooiui/static/css/common/loginDemo.css"
+          ],
+          "ooiui/static/css/compiled/timelineDemo.css" : [
+            "ooiui/static/css/common/scienceLayout.css",
+            "ooiui/static/css/common/timeline.css"
           ]
         }
       }

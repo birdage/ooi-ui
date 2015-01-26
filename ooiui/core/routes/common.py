@@ -25,6 +25,9 @@ def chart_demo():
 def plots_demo():
     return render_template('common/plotsDemo.html')
 
+@app.route('/timelineDemo.html')
+def timeline_demo():
+    return render_template('common/timelineDemo.html')
 
 @app.route('/api/user', methods=['POST'])
 @app.route('/api/user/', methods=['POST'])

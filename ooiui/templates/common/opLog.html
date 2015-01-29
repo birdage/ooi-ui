@@ -168,14 +168,13 @@ _.extend(OOI.prototype, Backbone.Events,  {
     $('#panelWatch').html(this.watchView.el);
 
     //Display the contents of the events in two views
-    console.log($('#list-view').hasClass("active"))
     if ($('#timeline-view').hasClass("active")){
       
       this.timelineEventView = new TimeLineEventView({
         collection: this.collections.events
       });
       $('#panelEvents').html(this.timelineEventView.el);
-      
+
     }else{
 
       this.eventView = new EventView({
@@ -185,7 +184,7 @@ _.extend(OOI.prototype, Backbone.Events,  {
     }    
 
     this.newEventView = new NewEventView();
-    $('#new-event').append(this.newEventView.el);
+    $('#new-event').append(this.newEventView.el);    
   },
   /*
    * orgSelection is called by the event listener for org:click. The trigger

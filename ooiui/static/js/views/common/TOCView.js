@@ -35,6 +35,11 @@ var TOCView = Backbone.View.extend({
     var self = this;
 
     var array_body = this.$el.find('#array_'+this.getArrayCode(model)+"_body") 
+
+    var current = parseInt(this.$el.find('#array_'+this.getArrayCode(model)+"_badge").text())  
+    this.$el.find('#array_'+this.getArrayCode(model)+"_badge").text(current+1) 
+    
+
     var key_list = Object.keys(this.dataIndent);    
 
     $(key_list).each(function(index,key) {      
@@ -92,8 +97,7 @@ var TOCView = Backbone.View.extend({
     //render the arrays
     self.renderArrays();
     this.$el.find('[data-toggle="tooltip"]').tooltip()
-
-    console.log(this.collection.length)    
+      
     this.collection.each(function(model){        
       self.add(model);
     });
